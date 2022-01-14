@@ -8,10 +8,12 @@ body{
     background: #fff;
 }
 .container{
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     background: #fff;
+
 }
+
 .btn-redius{
     background: red;
     color: white;
@@ -22,6 +24,12 @@ body{
     border-radius: 25px;
     letter-spacing: .15rem;
     text-transform: capitalize;
+    transition: all ease .5s;
+}
+.btn-redius:hover{
+    background: #6A6B6D;
+    cursor: pointer;
+    
 }
 .mar-l{
     margin-left: 15px;
@@ -30,6 +38,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 .header-left{
 
@@ -55,11 +64,117 @@ body{
     display: flex;
     align-content: center;
     justify-content: flex-end;
-    height: 50vh;
 }
+.al-r{
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+/* populer item area css start */
 
+
+  .wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 2rem;
+  }
+  .main{
+      width: 1000px;
+      margin: 0 auto;
+  }
+  .main h1{
+    font-size: 2rem;
+    font-weight:600;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .wrapper >div{
+      padding: 10px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: -5px -5px 15px 20px #f1f1f1;
+      transition: all ease .4s;
+  }
+
+  .wrapper >div:hover{
+    box-shadow: 5px 5px 10px 20px #2728222d;
+  }
+  .wrapper > div > div > img{
+      width: 100%;
+      cursor: pointer;
+      transition: all ease .4s;
+
+  }
+  .wrapper > div > div > img:hover{
+    opacity: .8;
+
+  }
+
+  .filled{
+      color: #FF8728;
+      
+  }
+  .wrapper h2{
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      transition: all ease .4s;
+
+  }
+  .wrapper h2:hover{
+    
+      color: #8E785C;
+  }
+  .wrapper > div > div > h5{
+      font-size: .8rem;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+  }
+  .wrapper > div > div > div{
+      font-size: .8rem;
+      margin-bottom: 10px;
+  }
+  .wrapper > div > div > div > span{
+      font-size: 1.25rem;
+      margin-left: .5rem;
+     
+  }
+  .wrapper{
+      margin-
+  }
+
+
+  /* footer area css */
+.footer{
+      background: #000;
+      width: 100%;
+      text-align: center;
+      margin-top:100px;
+      color:#fdfdfd;
+  }
+.footer div{
+     
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+  }
+.footer .social-link{
+    font-size: 2.5rem;
+    margin: 50px;
 }
-.header-right img{
-    width: 100%;
+.footer .footer-wrapper h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
-  
+.footer .footer-wrapper p{
+    padding-bottom: 20px;
+    color: skyblue;
+}
+.footer .footer-wrapper .social-link{
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
